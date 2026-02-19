@@ -5,13 +5,44 @@ def get_financial_context() -> Dict[str, Any]:
     Simulates fetching financial data for the user.
     """
     return {
-        "current_balance": 1200.0,
-        "currency": "EUR",
-        "recent_expenses": [
-            {"category": "Ocio/Comida", "description": "Sushi", "amount": 150.0},
-            {"category": "Transporte", "description": "Uber", "amount": 45.0},
-            {"category": "Ocio/Entretenimiento", "description": "Netflix", "amount": 15.0},
-            {"category": "Vivienda", "description": "Alquiler", "amount": 400.0}
-        ],
-        "savings_goal": "Ninguno definido"
-    }
+  "account_id": "acc_002",
+  "owner": { "first_name": "Lucía", "last_name": "Santos Pérez" },
+  "currency": "EUR",
+  "balances": { "total": 2180.75, "available": 2050.1 },
+  "monthly_summary": {
+    "month": "2025-08",
+    "spend_by_category": [
+      { "category": "Vivienda", "amount": 750 },
+      { "category": "Comida", "amount": 420 },
+      { "category": "Ocio", "amount": 210 },
+      { "category": "Transporte", "amount": 95 },
+      { "category": "Suscripciones", "amount": 88.94 },
+      { "category": "Otros", "amount": 160 }
+    ],
+    "income_total": 1600,
+    "spend_total": 1723.94
+  },
+  "fixed_expenses": [
+    { "name": "Alquiler", "category": "Vivienda", "amount": 750, "frequency": "monthly", "day_of_month": 1 },
+    { "name": "Netflix", "category": "Suscripciones", "amount": 15.99, "frequency": "monthly", "day_of_month": 3 },
+    { "name": "Spotify", "category": "Suscripciones", "amount": 10.99, "frequency": "monthly", "day_of_month": 6 },
+    { "name": "Disney+", "category": "Suscripciones", "amount": 8.99, "frequency": "monthly", "day_of_month": 8 },
+    { "name": "HBO Max", "category": "Suscripciones", "amount": 9.99, "frequency": "monthly", "day_of_month": 10 },
+    { "name": "iCloud", "category": "Suscripciones", "amount": 2.99, "frequency": "monthly", "day_of_month": 12 },
+    { "name": "Amazon Prime", "category": "Suscripciones", "amount": 4.99, "frequency": "monthly", "day_of_month": 14 },
+    { "name": "Gimnasio", "category": "Ocio", "amount": 34.0, "frequency": "monthly", "day_of_month": 2 }
+  ],
+  "transactions": [
+    { "date": "2025-08-01", "description": "Nómina", "category": "Ingresos", "amount": 1600.0 },
+    { "date": "2025-08-01", "description": "Alquiler", "category": "Vivienda", "amount": -750.0 },
+    { "date": "2025-08-02", "description": "Gimnasio", "category": "Ocio", "amount": -34.0 },
+    { "date": "2025-08-03", "description": "Netflix", "category": "Suscripciones", "amount": -15.99 },
+    { "date": "2025-08-06", "description": "Spotify", "category": "Suscripciones", "amount": -10.99 },
+    { "date": "2025-08-08", "description": "Disney+", "category": "Suscripciones", "amount": -8.99 },
+    { "date": "2025-08-10", "description": "HBO Max", "category": "Suscripciones", "amount": -9.99 },
+    { "date": "2025-08-12", "description": "iCloud", "category": "Suscripciones", "amount": -2.99 },
+    { "date": "2025-08-14", "description": "Amazon Prime", "category": "Suscripciones", "amount": -4.99 },
+    { "date": "2025-08-15", "description": "Supermercado", "category": "Comida", "amount": -64.2 },
+    { "date": "2025-08-18", "description": "Restaurante", "category": "Comida", "amount": -28.5 }
+  ]
+}
